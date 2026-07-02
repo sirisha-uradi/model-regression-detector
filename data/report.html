@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Model Regression Report</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 40px; background: #f8fafc; color: #1e293b; }
+    h1 { margin-bottom: 4px; }
+    .subtitle { color: #64748b; margin-bottom: 24px; }
+    .scorecard { display: flex; gap: 16px; margin-bottom: 24px; }
+    .card { background: white; border-radius: 8px; padding: 16px 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .card .label { font-size: 12px; color: #64748b; text-transform: uppercase; }
+    .card .value { font-size: 24px; font-weight: bold; }
+    .status-badge { display: inline-block; padding: 4px 12px; border-radius: 999px; color: white; font-weight: bold; background: #dc2626; }
+    table { width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid #e2e8f0; font-size: 14px; }
+    th { background: #f1f5f9; }
+    tr.regression { background: #fef2f2; }
+    tr.improvement { background: #f0fdf4; }
+</style>
+</head>
+<body>
+    <h1>Model Regression Report</h1>
+    <div class="subtitle">Comparing prompt <b>v1</b> (baseline) vs <b>v2</b> (new)</div>
+
+    <div class="scorecard">
+        <div class="card"><div class="label">Baseline Pass Rate</div><div class="value">80.0%</div></div>
+        <div class="card"><div class="label">New Pass Rate</div><div class="value">100.0%</div></div>
+        <div class="card"><div class="label">Delta</div><div class="value">+20.0 pts</div></div>
+        <div class="card"><div class="label">Status</div><div class="value"><span class="status-badge">CRITICAL</span></div></div>
+    </div>
+
+    <table>
+        <tr>
+            <th>Test Case</th>
+            <th>Expected</th>
+            <th>Baseline Result</th>
+            <th>New Result</th>
+            <th>Change</th>
+        </tr>
+        
+        <tr class="">
+            <td>email_001</td>
+            <td>billing</td>
+            <td>billing (PASS)</td>
+            <td>billing (PASS)</td>
+            <td></td>
+        </tr>
+        
+        <tr class="">
+            <td>email_002</td>
+            <td>technical</td>
+            <td>technical (PASS)</td>
+            <td>technical (PASS)</td>
+            <td></td>
+        </tr>
+        
+        <tr class="">
+            <td>email_003</td>
+            <td>account</td>
+            <td>account (PASS)</td>
+            <td>account (PASS)</td>
+            <td></td>
+        </tr>
+        
+        <tr class="">
+            <td>email_004</td>
+            <td>general</td>
+            <td>general (PASS)</td>
+            <td>general (PASS)</td>
+            <td></td>
+        </tr>
+        
+        <tr class="">
+            <td>email_005</td>
+            <td>billing</td>
+            <td>billing (PASS)</td>
+            <td>billing (PASS)</td>
+            <td></td>
+        </tr>
+        
+        <tr class="">
+            <td>email_006</td>
+            <td>technical</td>
+            <td>technical (PASS)</td>
+            <td>technical (PASS)</td>
+            <td></td>
+        </tr>
+        
+        <tr class="improvement">
+            <td>email_007</td>
+            <td>billing</td>
+            <td>technical (FAIL)</td>
+            <td>billing (PASS)</td>
+            <td>IMPROVED</td>
+        </tr>
+        
+        <tr class="">
+            <td>email_008</td>
+            <td>account</td>
+            <td>account (PASS)</td>
+            <td>account (PASS)</td>
+            <td></td>
+        </tr>
+        
+        <tr class="">
+            <td>email_009</td>
+            <td>general</td>
+            <td>general (PASS)</td>
+            <td>general (PASS)</td>
+            <td></td>
+        </tr>
+        
+        <tr class="improvement">
+            <td>email_010</td>
+            <td>billing</td>
+            <td>technical (FAIL)</td>
+            <td>billing (PASS)</td>
+            <td>IMPROVED</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

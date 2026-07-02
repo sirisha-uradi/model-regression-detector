@@ -1,0 +1,82 @@
+[
+  {
+    "id": "email_001",
+    "email": "Hi, I was charged $49.99 twice for my subscription this month. Please refund the duplicate charge.",
+    "expected_category": "billing",
+    "expected_summary": "Customer was double-charged for their subscription and is requesting a refund.",
+    "difficulty": "easy",
+    "notes": "Clear billing complaint with a specific amount."
+  },
+  {
+    "id": "email_002",
+    "email": "The app keeps crashing every time I try to upload a photo bigger than 5MB. This started after the last update.",
+    "expected_category": "technical",
+    "expected_summary": "Customer's app crashes when uploading photos over 5MB since the last update.",
+    "difficulty": "easy",
+    "notes": "Clear technical bug report."
+  },
+  {
+    "id": "email_003",
+    "email": "I forgot which email address I used to sign up. Can you help me find my account?",
+    "expected_category": "account",
+    "expected_summary": "Customer cannot recall their signup email and needs help recovering their account.",
+    "difficulty": "easy",
+    "notes": "Clear account recovery request."
+  },
+  {
+    "id": "email_004",
+    "email": "Do you guys offer any discounts for college students?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking whether student discounts are available.",
+    "difficulty": "easy",
+    "notes": "Clear general inquiry, no account/billing/technical issue."
+  },
+  {
+    "id": "email_005",
+    "email": "I upgraded my plan last week but I'm still being billed at the old rate, and now the new features aren't showing up either.",
+    "expected_category": "billing",
+    "expected_summary": "Customer upgraded their plan but is still billed the old rate and missing new features.",
+    "difficulty": "hard",
+    "notes": "Ambiguous - touches both billing AND technical/account. Billing is the primary intent since the core complaint is being charged incorrectly."
+  },
+  {
+    "id": "email_006",
+    "email": "not working",
+    "expected_category": "technical",
+    "expected_summary": "Customer reports that something is not working, without further detail.",
+    "difficulty": "hard",
+    "notes": "Extremely short, vague email with no specifics. Tests how the model handles minimal information."
+  },
+  {
+    "id": "email_007",
+    "email": "wow great job charging me for a service that doesnt even load half the time!! real professional guys",
+    "expected_category": "billing",
+    "expected_summary": "Customer is complaining sarcastically about being charged for an unreliable service.",
+    "difficulty": "hard",
+    "notes": "Sarcastic tone. Model needs to detect the real complaint (billing for a broken service) despite sarcasm."
+  },
+  {
+    "id": "email_008",
+    "email": "Can i chnage my acount pasword? i dont see the option anywhre",
+    "expected_category": "account",
+    "expected_summary": "Customer wants to change their account password but cannot find the option.",
+    "difficulty": "medium",
+    "notes": "Contains multiple typos. Tests robustness to misspellings."
+  },
+  {
+    "id": "email_009",
+    "email": "What are your customer support hours?",
+    "expected_category": "general",
+    "expected_summary": "Customer is asking about customer support availability hours.",
+    "difficulty": "easy",
+    "notes": "Simple factual general question."
+  },
+  {
+    "id": "email_010",
+    "email": "My invoice shows a 'processing fee' I don't recognize and the app also logged me out randomly twice today.",
+    "expected_category": "billing",
+    "expected_summary": "Customer noticed an unrecognized processing fee on their invoice and experienced random logouts.",
+    "difficulty": "hard",
+    "notes": "Mixed billing + technical issue in one email. Billing is primary since the invoice discrepancy is the main ask."
+  }
+]

@@ -1,0 +1,89 @@
+{
+  "prompt_version": "v1",
+  "passed": 8,
+  "failed": 2,
+  "total": 10,
+  "pass_rate": 80.0,
+  "results": [
+    {
+      "id": "email_001",
+      "status": "PASS",
+      "expected_category": "billing",
+      "actual_category": "billing",
+      "actual_summary": "Customer requests a refund for a duplicate $49.99 subscription charge.\n",
+      "difficulty": "easy"
+    },
+    {
+      "id": "email_002",
+      "status": "PASS",
+      "expected_category": "technical",
+      "actual_category": "technical",
+      "actual_summary": "The app crashes when uploading photos over 5MB, a problem that began after the last update.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "email_003",
+      "status": "PASS",
+      "expected_category": "account",
+      "actual_category": "account",
+      "actual_summary": "Customer forgot their signup email address and needs help locating their account.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "email_004",
+      "status": "PASS",
+      "expected_category": "general",
+      "actual_category": "general",
+      "actual_summary": "Customer is inquiring about potential discounts for college students.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "email_005",
+      "status": "PASS",
+      "expected_category": "billing",
+      "actual_category": "billing",
+      "actual_summary": "Customer's plan upgrade is not reflected in their billing or access to new features.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "email_006",
+      "status": "PASS",
+      "expected_category": "technical",
+      "actual_category": "technical",
+      "actual_summary": "Customer's service or product is not working.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "email_007",
+      "status": "FAIL",
+      "expected_category": "billing",
+      "actual_category": "technical",
+      "actual_summary": "Customer is unhappy with the service frequently failing to load.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "email_008",
+      "status": "PASS",
+      "expected_category": "account",
+      "actual_category": "account",
+      "actual_summary": "Customer is having trouble finding the option to change their account password.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "email_009",
+      "status": "PASS",
+      "expected_category": "general",
+      "actual_category": "general",
+      "actual_summary": "Customer wants to know the customer support hours.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "email_010",
+      "status": "FAIL",
+      "expected_category": "billing",
+      "actual_category": "technical",
+      "actual_summary": "Customer's app logged them out twice and they have a question about a 'processing fee' on their invoice.",
+      "difficulty": "hard"
+    }
+  ]
+}
